@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/app_bar_search"
+
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always|withText"
+        android:title="add"/>
+    <item
+        android:id="@+id/reset"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always"
+        android:title="reset"/>
+    <item
+        android:id="@+id/rateus"
+        app:showAsAction="never"
+        android:title="Rate us"/>
+
+    <item
+        android:id="@+id/Share"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom"
+        android:title="Share"/>
+    <item
+        android:id="@+id/git"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="ifRoom"
+        android:title="GitHub"/>
+    <item
+        android:id="@+id/exit"
+        app:showAsAction="never"
+        android:title="Exit"/>
+
+
+
+</menu>

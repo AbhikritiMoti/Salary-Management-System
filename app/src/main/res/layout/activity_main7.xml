@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+    <TextView
+        android:id="@+id/salaryDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/image6"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salaryDisplay" />
+
+    <TextView
+        android:id="@+id/basicSalary"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Basic Salary:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSalary" />
+
+    <TextView
+        android:id="@+id/basicSalaryDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/basicSalary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSalary" />
+
+    <TextView
+        android:id="@+id/dearnessAllowance"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="DA:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basicSalary" />
+
+    <TextView
+        android:id="@+id/dearnessAllowanceDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/dearnessAllowance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basicSalaryDisplay" />
+
+    <TextView
+        android:id="@+id/travellingAllowance"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="TA:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dearnessAllowance" />
+
+    <TextView
+        android:id="@+id/travellingAllowanceDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/travellingAllowance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dearnessAllowanceDisplay" />
+
+    <TextView
+        android:id="@+id/houseRentalAllowance"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="HRA:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/travellingAllowance" />
+
+    <TextView
+        android:id="@+id/houseRentalAllowanceDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/houseRentalAllowance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/travellingAllowanceDisplay" />
+
+    <TextView
+        android:id="@+id/otherAllowance"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="OA:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/houseRentalAllowance" />
+
+    <TextView
+        android:id="@+id/otherAllowanceDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/otherAllowance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/houseRentalAllowanceDisplay" />
+
+    <TextView
+        android:id="@+id/grossSalary"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Gross Salary:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherAllowance" />
+
+    <TextView
+        android:id="@+id/grossSalaryDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/grossSalary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherAllowanceDisplay" />
+
+    <TextView
+        android:id="@+id/providentFund"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Provident Fund:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grossSalary"
+         />
+
+    <TextView
+        android:id="@+id/providentFundDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/grossSalary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grossSalaryDisplay" />
+
+    <TextView
+        android:id="@+id/incomeTax"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Income Tax:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/providentFund"
+        />
+
+    <TextView
+        android:id="@+id/incomeTaxDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/grossSalary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/providentFundDisplay" />
+
+    <TextView
+        android:id="@+id/netSalary"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Net Salary:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTax"
+        />
+
+    <TextView
+        android:id="@+id/netSalaryDisplay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@+id/grossSalary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTaxDisplay" />
+
+    <Button
+        android:id="@+id/backToMainMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/back_to_main_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/netSalaryDisplay"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="25dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/round_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/round_rate_review_24"
+        android:title="Rate" />
+
+
+    <item
+        android:id="@+id/git"
+        android:icon="@drawable/baseline_code_24"
+        android:title="GitHub" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/baseline_share_24"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="Exit" />
+</menu>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/main_menu"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="392dp"
+        android:layout_height="259dp"
+        android:layout_below="@+id/mainMenu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/image3" />
+
+    <Button
+        android:id="@+id/empMasterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/employee_master"
+        app:cornerRadius="25dp" />
+
+    <Button
+        android:id="@+id/salaryGenBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/salary_gen"
+        app:cornerRadius="25dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/empMasterBtn" />
+
+    <Button
+        android:id="@+id/salaryDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cornerRadius="25dp"
+        android:text="Salary Display"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/salaryGenBtn" />
+
+    <Button
+        android:id="@+id/salaryExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salaryDisplay"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/salary_exit"
+        app:cornerRadius="25dp" />
+
+
+    <Button
+        android:id="@+id/quick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="30dp"
+        android:text="quick calculation"
+        app:cornerRadius="25dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/footer" />
+
+
+
+</RelativeLayout>

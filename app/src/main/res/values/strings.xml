@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Salary Management System</string>
+    <string name="salary_management_system">Salary Management System</string>
+    <string name="next">Next</string>
+    <string name="developed_by">Developed by:\n Hargun Singh Khera</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="employee_master">Employee Master</string>
+    <string name="salary_gen">Salary Generation</string>
+    <string name="salary_display">Salary Display</string>
+    <string name="salary_exit">Exit</string>
+    <string name="emp_master_menu">Employee Master Menu</string>
+    <string name="add_emp">Add Employee</string>
+    <string name="display_emp_details">Display Employee Details</string>
+    <string name="edit_emp_details">Edit Employee Details</string>
+    <string name="del_emp_details">Delete Employee Details</string>
+    <string name="back_to_main_menu">Back to Main Menu</string>
+    <string name="employee_master_form"><u>Employee Master Form</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+</resources>

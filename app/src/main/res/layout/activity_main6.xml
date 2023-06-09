@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/empDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Details"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/empDetailsImage"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDetails"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/image5" />
+
+        <TextView
+            android:id="@+id/empId"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Employee Id: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDetailsImage" />
+
+        <TextView
+            android:id="@+id/empIdDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toEndOf="@+id/empId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDetailsImage" />
+
+        <TextView
+            android:id="@+id/empName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Employee Name: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empId" />
+
+        <TextView
+            android:id="@+id/empNameDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empId" />
+
+        <TextView
+            android:id="@+id/empFatherName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Father Name: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empName" />
+
+        <TextView
+            android:id="@+id/empFatherNameDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empFatherName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empName" />
+
+        <TextView
+            android:id="@+id/empDOB"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Employee DOB: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empFatherName" />
+
+        <TextView
+            android:id="@+id/empDOBDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empFatherName" />
+
+        <TextView
+            android:id="@+id/empAddress"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDOB" />
+
+        <TextView
+            android:id="@+id/empAddressDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDOB" />
+
+
+        <TextView
+            android:id="@+id/empEmail"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empAddressDisplay" />
+
+        <TextView
+            android:id="@+id/empEmailDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empAddressDisplay" />
+
+        <TextView
+            android:id="@+id/empMobileNumber"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empEmailDisplay" />
+
+        <TextView
+            android:id="@+id/empMobileNumberDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empMobileNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empEmailDisplay" />
+
+        <TextView
+            android:id="@+id/empDOJ"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Date of Joining: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empMobileNumberDisplay" />
+
+        <TextView
+            android:id="@+id/empDOJDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empMobileNumberDisplay" />
+
+        <TextView
+            android:id="@+id/empDOL"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Date of Leaving: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDOJDisplay" />
+
+        <TextView
+            android:id="@+id/empDOLDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDOJDisplay" />
+
+        <TextView
+            android:id="@+id/empDepartment"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Department: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDOLDisplay" />
+
+        <TextView
+            android:id="@+id/empDepartmentDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDOLDisplay" />
+
+        <TextView
+            android:id="@+id/empDesignation"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Designation: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDepartmentDisplay" />
+
+        <TextView
+            android:id="@+id/empDesignationDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDepartmentDisplay" />
+
+        <TextView
+            android:id="@+id/empBasicSalary"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Basic Salary: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDesignationDisplay" />
+
+        <TextView
+            android:id="@+id/empBasicSalaryDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDesignationDisplay" />
+
+        <TextView
+            android:id="@+id/empDearnessAllowance"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="DA: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empBasicSalaryDisplay" />
+
+        <TextView
+            android:id="@+id/empDearnessAllowanceDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empBasicSalaryDisplay" />
+
+        <TextView
+            android:id="@+id/empTravellingAllowance"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="TA: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empDearnessAllowanceDisplay" />
+
+        <TextView
+            android:id="@+id/empTravellingAllowanceDisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintTop_toBottomOf="@+id/empDearnessAllowanceDisplay" />
+
+        <TextView
+            android:id="@+id/empHRA"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="HRA: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empTravellingAllowanceDisplay" />
+
+        <TextView
+            android:id="@+id/empHRADisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empTravellingAllowanceDisplay" />
+
+        <TextView
+            android:id="@+id/empOA"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="OA: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empHRADisplay" />
+
+        <TextView
+            android:id="@+id/empOADisplay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/empDOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empHRADisplay" />
+
+        <Button
+            android:id="@+id/backToEmployeeMasterMainMenuBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Employee Master Menu"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empOA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            app:cornerRadius="25dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
